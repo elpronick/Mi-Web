@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+.site-shell {
+  overflow: clip;
+}
+
+.container {
+  width: min(calc(100% - 2rem), $container-width);
+  margin: 0 auto;
+}
+
+.section {
+  padding: $space-3xl 0;
+}
+
+.section-heading,
+.about__intro {
+  max-width: 720px;
+}
+
+.section-heading h2,
+.about__intro h2,
+.contact__copy h2 {
+  font-family: $font-display;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-xs;
+  margin-bottom: $space-md;
+  color: $color-text-muted;
+  font-size: 0.75rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.section-eyebrow::before {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: linear-gradient(90deg, $color-accent, transparent);
+}

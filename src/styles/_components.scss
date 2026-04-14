@@ -1,0 +1,238 @@
+@use "./variables" as *;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 1.25rem 0 0;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-md;
+  padding: 0.95rem 1.1rem;
+  border: 1px solid $color-border;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.72);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 60px -32px $color-shadow;
+}
+
+.navbar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-sm;
+}
+
+.navbar__brand-mark {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+}
+
+.navbar__brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar__brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.navbar__brand-copy strong {
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.navbar__brand-copy span {
+  color: $color-text-muted;
+  font-size: 0.8rem;
+}
+
+.navbar__nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar__nav a {
+  position: relative;
+  color: $color-text-muted;
+  transition: color $transition-base;
+}
+
+.navbar__nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  width: 100%;
+  height: 1px;
+  background: $color-accent;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform $transition-base;
+}
+
+.navbar__nav a:hover,
+.navbar__nav a:focus-visible {
+  color: $color-text;
+}
+
+.navbar__nav a:hover::after,
+.navbar__nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0.95rem 1.4rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.94rem;
+  font-weight: 500;
+  transition:
+    transform $transition-base,
+    border-color $transition-base,
+    background-color $transition-base,
+    color $transition-base,
+    box-shadow $transition-base;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  background: linear-gradient(135deg, #ff7b3d 0%, $color-accent 48%, #d63d00 100%);
+  color: $color-text;
+  box-shadow: 0 22px 40px -24px rgba(255, 90, 9, 0.9);
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  box-shadow: 0 28px 50px -24px rgba(255, 90, 9, 0.95);
+}
+
+.button--ghost {
+  border-color: $color-border;
+  background: rgba(255, 255, 255, 0.02);
+  color: $color-text;
+}
+
+.button--ghost:hover,
+.button--ghost:focus-visible {
+  border-color: rgba(255, 90, 9, 0.4);
+  background: rgba(255, 90, 9, 0.08);
+}
+
+.project-card {
+  display: grid;
+  gap: $space-md;
+  min-height: 100%;
+  padding: 1.8rem;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    linear-gradient(180deg, rgba(34, 34, 34, 0.88), rgba(18, 18, 18, 0.94));
+  box-shadow: 0 24px 70px -46px $color-shadow;
+  transition:
+    transform $transition-slow,
+    border-color $transition-base,
+    box-shadow $transition-base;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 90, 9, 0.28);
+  box-shadow: 0 34px 90px -40px rgba(0, 0, 0, 0.55);
+}
+
+.project-card__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: $space-sm;
+  color: $color-text-muted;
+  font-size: 0.85rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.project-card p {
+  color: $color-text-muted;
+}
+
+.project-card__link {
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: $color-accent;
+  cursor: pointer;
+}
+
+.contact-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-md;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background: rgba(255, 255, 255, 0.025);
+  transition:
+    transform $transition-base,
+    border-color $transition-base,
+    background-color $transition-base;
+}
+
+.contact-pill:hover {
+  transform: translateX(6px);
+  border-color: rgba(255, 90, 9, 0.26);
+  background: rgba(255, 90, 9, 0.08);
+}
+
+.contact-pill span {
+  color: $color-text-muted;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.contact-pill strong {
+  font-size: 1rem;
+  text-align: right;
+}
+
+.footer {
+  padding: 0 0 $space-xl;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-sm;
+  padding-top: $space-lg;
+  border-top: 1px solid $color-border;
+  color: $color-text-muted;
+}

@@ -1,0 +1,304 @@
+@use "./variables" as *;
+
+.hero {
+  padding: 4.5rem 0 2rem;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4.5rem);
+}
+
+.hero__content {
+  position: relative;
+}
+
+.hero__kicker {
+  display: inline-flex;
+  padding: 0.45rem 0.75rem;
+  margin-bottom: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: $color-text-muted;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 10ch;
+  font-size: clamp(3.8rem, 10vw, 7.6rem);
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+}
+
+.hero h1 span {
+  display: block;
+  color: rgba(245, 245, 245, 0.78);
+}
+
+.hero__lead {
+  max-width: 38rem;
+  margin-top: 1.6rem;
+  color: $color-text;
+  font-family: $font-editorial;
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  line-height: 1.08;
+}
+
+.hero__body {
+  max-width: 34rem;
+  margin-top: 1.25rem;
+  color: $color-text-muted;
+  font-size: 1.02rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  margin-top: 2rem;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: $space-sm;
+  margin-top: 2.6rem;
+}
+
+.hero__stats div {
+  padding: 1rem 1.1rem;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.hero__stats dt {
+  margin-bottom: 0.35rem;
+  color: $color-text-muted;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.hero__stats dd {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero__visual {
+  position: relative;
+  display: grid;
+  gap: $space-md;
+  justify-items: end;
+}
+
+.hero__frame {
+  position: relative;
+  width: min(100%, 490px);
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 38px;
+  background:
+    radial-gradient(circle at top, rgba(255, 90, 9, 0.1), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  box-shadow: 0 32px 90px -42px rgba(0, 0, 0, 0.7);
+}
+
+.hero__frame img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: min(70vh, 720px);
+  object-fit: cover;
+  border-radius: 28px;
+  filter: saturate(0.94) contrast(1.03);
+}
+
+.hero__orbit {
+  position: absolute;
+  inset: auto;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.hero__orbit--one {
+  top: -18px;
+  right: -16px;
+  width: 180px;
+  height: 180px;
+}
+
+.hero__orbit--two {
+  bottom: 42px;
+  left: -44px;
+  width: 120px;
+  height: 120px;
+  border-color: rgba(255, 90, 9, 0.35);
+}
+
+.hero__note {
+  max-width: 290px;
+  margin-right: 0.6rem;
+  padding: 1.1rem 1.2rem;
+  border-left: 2px solid $color-accent;
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(10px);
+}
+
+.hero__note span {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-text-muted;
+}
+
+.hero__note p,
+.about__content p,
+.contact__copy p {
+  color: $color-text-muted;
+  font-size: 1.02rem;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: $space-2xl;
+  align-items: start;
+}
+
+.about__content {
+  display: grid;
+  gap: $space-md;
+  padding: 2rem;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+    rgba(255, 255, 255, 0.015);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: $space-md;
+  margin-top: 2.2rem;
+}
+
+.contact__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: $space-xl;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid $color-border;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 90, 9, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015));
+}
+
+.contact__links {
+  display: grid;
+  gap: $space-sm;
+}
+
+@media (max-width: 1100px) {
+  .hero__grid,
+  .about__grid,
+  .contact__panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    justify-items: start;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 840px) {
+  .navbar__nav,
+  .navbar__cta {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 2.6rem;
+  }
+
+  .hero h1 {
+    max-width: 12ch;
+    font-size: clamp(3rem, 15vw, 5.2rem);
+  }
+
+  .hero__lead {
+    font-size: clamp(1.4rem, 5vw, 1.9rem);
+  }
+
+  .hero__stats,
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding: 4.2rem 0;
+  }
+
+  .container {
+    width: min(calc(100% - 1.25rem), $container-width);
+  }
+
+  .navbar {
+    padding-top: 0.8rem;
+  }
+
+  .navbar__inner {
+    border-radius: 24px;
+  }
+
+  .navbar__brand-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hero__frame {
+    padding: 0.75rem;
+    border-radius: 26px;
+  }
+
+  .hero__frame img {
+    height: 420px;
+    border-radius: 20px;
+  }
+
+  .hero__note,
+  .about__content,
+  .contact__panel {
+    padding: 1.2rem;
+  }
+
+  .contact-pill {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-pill strong {
+    text-align: left;
+  }
+}
