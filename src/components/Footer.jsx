@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container footer__inner">
-        <p>Nick. Diseño, código y criterio para productos que quieren escalar.</p>
+        <p>elpronick. Desarrollo full stack, arquitectura web y productos listos para crecer.</p>
         <span>Madrid, España</span>
       </div>
     </footer>

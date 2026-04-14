@@ -7,17 +7,29 @@ function ContactSection() {
       <div className="container contact__panel">
         <div className="contact__copy">
           <SectionEyebrow>Contacto</SectionEyebrow>
-          <h2>Si el proyecto necesita nivel visual y ejecución limpia, podemos hablar.</h2>
+          <h2>Si necesitas a un perfil full stack para construir, mejorar o escalar un producto, hablemos.</h2>
           <p>
-            Disponible para colaboraciones, producto digital, landings de alto impacto y
-            evolución de marca personal.
+            Disponible para colaboraciones, desarrollo web a medida, aplicaciones internas,
+            landing pages, backends, integraciones y optimización técnica.
           </p>
         </div>
 
         <div className="contact__links">
-          <ContactPill label="Email" value="nick@portfolio.dev" href="mailto:nick@portfolio.dev" />
-          <ContactPill label="LinkedIn" value="linkedin.com/in/nick" href="https://linkedin.com" />
-          <ContactPill label="Instagram" value="@nick.codes" href="https://instagram.com" />
+          <ContactPill
+            label="Email"
+            value="elpronick.dev@gmail.com"
+            href="mailto:elpronick.dev@gmail.com"
+          />
+          <ContactPill
+            label="LinkedIn"
+            value="linkedin.com/in/francisco-gerardo-t"
+            href="https://linkedin.com/in/francisco-gerardo-t"
+          />
+          <ContactPill
+            label="Instagram"
+            value="@elpronick_dev"
+            href="https://instagram.com/elpronick_dev"
+          />
         </div>
       </div>
     </section>

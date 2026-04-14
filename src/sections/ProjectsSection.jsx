@@ -3,25 +3,25 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
-    title: "Portfolio premium para marca personal",
+    title: "Aplicación web full stack para negocio digital",
     summary:
-      "Dirección visual oscura, narrativa editorial y arquitectura preparada para crecer con nuevos casos, contenido y servicios.",
+      "Frontend moderno, backend sólido, persistencia de datos y despliegue preparado para soportar crecimiento real.",
     year: "2026",
-    services: "Branding UI / Frontend",
+    services: "React / Node.js / SQL",
   },
   {
-    title: "Landing de producto con enfoque conversión",
+    title: "Panel interno para automatizar operaciones",
     summary:
-      "Jerarquía clara, bloques modulares y un sistema visual capaz de soportar evolución comercial sin perder consistencia.",
+      "Herramienta pensada para centralizar flujos, reducir tareas manuales y conectar negocio, datos y usuarios.",
     year: "2025",
-    services: "UX / Performance",
+    services: "Python / Django / APIs",
   },
   {
-    title: "Sistema base para proyectos escalables",
+    title: "Base técnica para proyectos escalables",
     summary:
-      "Estructura de componentes y SCSS modular para pasar de una web de presentación a un ecosistema digital más completo.",
+      "Arquitectura mantenible para evolucionar una web en producto completo con SEO, rendimiento y despliegue controlado.",
     year: "2025",
-    services: "Architecture / UI System",
+    services: "Architecture / DevOps / SEO",
   },
 ];
 
@@ -31,7 +31,7 @@ function ProjectsSection() {
       <div className="container">
         <div className="section-heading">
           <SectionEyebrow>Selección</SectionEyebrow>
-          <h2>Una base pensada para enseñar criterio, no solo para estar online.</h2>
+          <h2>Proyectos pensados para resolver problemas reales, no solo para verse bien.</h2>
         </div>
 
         <div className="projects__grid">

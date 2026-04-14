@@ -30,7 +30,7 @@
 
 .hero h1 {
   max-width: 10ch;
-  font-size: clamp(3.8rem, 10vw, 7.6rem);
+  font-size: clamp(3.1rem, 8vw, 6.1rem);
   line-height: 0.9;
   letter-spacing: -0.08em;
 }
@@ -148,6 +148,7 @@
   padding: 1.1rem 1.2rem;
   border-left: 2px solid $color-accent;
   background: rgba(255, 255, 255, 0.025);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
@@ -226,11 +227,6 @@
 }
 
 @media (max-width: 840px) {
-  .navbar__nav,
-  .navbar__cta {
-    display: none;
-  }
-
   .hero {
     padding-top: 2.6rem;
   }

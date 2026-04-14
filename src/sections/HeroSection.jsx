@@ -5,18 +5,18 @@ function HeroSection() {
     <section className="hero" id="inicio">
       <div className="container hero__grid">
         <div className="hero__content">
-          <span className="hero__kicker">Portfolio / Marca personal / Producto digital</span>
+          <span className="hero__kicker">Full stack / Producto digital / Arquitectura web</span>
           <h1>
-            Construyo interfaces con presencia,
-            <span> criterio visual y ambición real.</span>
+            Desarrollo soluciones web completas,
+            <span> del frontend al backend.</span>
           </h1>
           <p className="hero__lead">
-            Desarrollo experiencias frontend que cuidan el detalle, refuerzan la marca y
-            convierten una idea en una presencia digital seria.
+            Soy programador full stack y construyo productos sólidos, escalables y bien
+            resueltos tanto en experiencia de usuario como en lógica, datos y despliegue.
           </p>
           <p className="hero__body">
-            Esta base está pensada para crecer: portfolio, contenido, servicios y una
-            identidad propia que no depende de una plantilla genérica.
+            Trabajo con tecnologías modernas para convertir una idea en una aplicación real:
+            arquitectura, interfaz, APIs, bases de datos, rendimiento y posicionamiento.
           </p>
 
           <div className="hero__actions">
@@ -31,15 +31,15 @@ function HeroSection() {
           <dl className="hero__stats">
             <div>
               <dt>Enfoque</dt>
-              <dd>Frontend + UI</dd>
+              <dd>Frontend + Backend</dd>
             </div>
             <div>
-              <dt>Estilo</dt>
-              <dd>Dark editorial</dd>
+              <dt>Stack</dt>
+              <dd>Web apps y APIs</dd>
             </div>
             <div>
-              <dt>Base</dt>
-              <dd>Lista para escalar</dd>
+              <dt>Objetivo</dt>
+              <dd>Escalar con criterio</dd>
             </div>
           </dl>
         </div>
@@ -52,10 +52,10 @@ function HeroSection() {
           </div>
 
           <aside className="hero__note">
-            <span>Identidad digital</span>
+            <span>Perfil técnico</span>
             <p>
-              Un portfolio no solo enseña trabajo. Posiciona, filtra oportunidades y
-              deja claro el nivel de exigencia.
+              Python, JavaScript, TypeScript, React, Django, Node.js, SQL, Astro,
+              Angular, Vue, Java, Rust, Golang y más para construir soluciones completas.
             </p>
           </aside>
         </div>
