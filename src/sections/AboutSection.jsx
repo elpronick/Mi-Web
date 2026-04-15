@@ -61,41 +61,33 @@ function AboutSection() {
             y optimización.
           </p>
           <p>
-            Controlo Python, Git y GitHub, HTML, CSS, JavaScript, React, TypeScript,
-            Streamlit, SQL, Django, WordPress, despliegue, SEO, Astro, Angular, Vue,
-            Java, Node.js, Rust y Golang para adaptar la solución a cada proyecto.
-          </p>
-
-          <div className="about__divider" aria-hidden="true" />
-
-          <p>
             Mi enfoque es práctico: escribir código mantenible, preparar arquitecturas
             listas para crecer y entregar productos web que funcionen bien por dentro y
             transmitan confianza por fuera.
           </p>
         </div>
+      </div>
 
-        <div className="about__marquee" aria-label="Tecnologías que domino">
-          <div className="about__marquee-fade about__marquee-fade--top" aria-hidden="true" />
+      <div className="about__marquee" aria-label="Tecnologías que domino">
+        <div className="about__marquee-fade about__marquee-fade--top" aria-hidden="true" />
 
-          <div className="about__marquee-viewport">
-            <div className="about__marquee-track">
-              {techLogos.map((tech) => (
-                <span key={tech.name} className="about__tech-card">
-                  <img src={tech.src} alt={tech.name} loading="lazy" />
-                </span>
-              ))}
+        <div className="about__marquee-viewport">
+          <div className="about__marquee-track">
+            {techLogos.map((tech) => (
+              <span key={tech.name} className="about__tech-card">
+                <img src={tech.src} alt={tech.name} loading="lazy" />
+              </span>
+            ))}
 
-              {techLogos.map((tech) => (
-                <span key={`${tech.name}-duplicate`} className="about__tech-card" aria-hidden="true">
-                  <img src={tech.src} alt="" loading="lazy" />
-                </span>
-              ))}
-            </div>
+            {techLogos.map((tech) => (
+              <span key={`${tech.name}-duplicate`} className="about__tech-card" aria-hidden="true">
+                <img src={tech.src} alt="" loading="lazy" />
+              </span>
+            ))}
           </div>
-
-          <div className="about__marquee-fade about__marquee-fade--bottom" aria-hidden="true" />
         </div>
+
+        <div className="about__marquee-fade about__marquee-fade--bottom" aria-hidden="true" />
       </div>
     </section>
   );

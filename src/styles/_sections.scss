@@ -186,19 +186,14 @@
     rgba(255, 255, 255, 0.015);
 }
 
-.about__divider {
-  height: 72px;
-  margin: 0.2rem 0 -0.55rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
-  opacity: 0.5;
-  pointer-events: none;
-}
-
 .about__marquee {
   position: relative;
   display: grid;
   gap: 0.85rem;
-  grid-column: 2;
+  width: 100vw;
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .about__marquee-fade {
@@ -335,7 +330,9 @@
   }
 
   .about__marquee {
-    grid-column: auto;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .projects__grid {
@@ -410,7 +407,6 @@
     padding: 1.2rem;
   }
 
-  .about__divider,
   .about__marquee-fade {
     height: 44px;
   }
