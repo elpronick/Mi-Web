@@ -1,0 +1,26 @@
+<svg width="200" height="200" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Nube -->
+  <path fill="#4A90E2" d="
+    M96 56
+    a20 20 0 0 0 -40 -6
+    a16 16 0 0 0 -24 14
+    a14 14 0 0 0 2 28
+    h58
+    a18 18 0 0 0 4 -36
+    z
+  "></path>
+
+  <!-- Flecha (deploy) -->
+  <path fill="#FFFFFF" d="
+    M64 84
+    L48 68
+    H58
+    V48
+    H70
+    V68
+    H80
+    Z
+  "></path>
+
+</svg>
